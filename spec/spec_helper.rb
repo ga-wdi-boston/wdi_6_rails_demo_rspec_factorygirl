@@ -9,6 +9,7 @@ ActiveRecord::Migration.check_pending! if defined?(ActiveRecord::Migration)
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  config.include SessionHelpers
 
   # Disable this since database_cleaner does the same thing and more
   config.use_transactional_fixtures = false

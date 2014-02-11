@@ -4,7 +4,6 @@ feature 'Visitor signs in' do
   background do
     @user = create(:user)
     visit root_path
-    click_link 'Sign in'
   end
 
   scenario 'successfully' do
